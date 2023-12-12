@@ -1,0 +1,75 @@
+#category th{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#category td{
+    border: 1px solid black;
+    padding: 10px;
+}
+#category{
+    font-size: 15px;
+    margin-left: 23%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: rgba(236, 238, 252, 0.742);
+   
+ 
+}
+
+.table h2{
+    color: rgb(39, 23, 35);
+    font-size: 25px;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+    
+}
+ body{
+    
+   background-image: url(https://images.bubbleup.com/width1920/quality35/mville2017/1-brand/1-margaritaville.com/gallery-media/220803-compasshotel-medford-pool-73868-1677873697.jpg);
+  
+    /* Set background size and other properties as needed */
+    background-size: cover; /* or contain, or specific dimensions */
+    background-repeat: no-repeat; /* if you don't want the image to repeat */
+    background-position: center center; /* adjust as needed */
+    background-attachment: fixed; /* if you want a fixed background */
+   
+}
+.table{
+    box-sizing: border-box;
+    background-color: rgba(254, 255, 255, 0.481);
+    padding-bottom: 10%;
+    
+}
+#merge{
+    text-align: center;
+    font-size: 15px;
+    padding:10px;
+}
+#categoryy th{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#categoryy td{
+    border: 1px solid black;
+    padding: 20px;
+}
+#categoryy{
+    font-size: 15px;
+    margin-left: 30%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color:rgba(236, 238, 252, 0.742);
+   
+}
+#book{
+    margin-top: 5%;
+   margin-left: 45%;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(75, 73, 73);
+}

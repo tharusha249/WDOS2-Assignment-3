@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+
+    <link rel="stylesheet" href="bookNow.css">
+</head>
+<body>
+       <header class="header">
+
+     
+  
+      <nav class="navbar">
+         
+         <ul>
+         <b><li id="heading">Whispering woods</li></b>
+         <li><a href="index.html">home</a></li>
+         <li><a href="hotel branch.html">our branches</a></li>
+         <li><a href="adventure.html">adventures</a></li>
+         <li><a href="restaurant.html">restaurant</a></li>
+         <li><a href="book.html">booking details</a>
+         <li><a href="booking.html">book now</a></li>
+      </ul>
+      </nav>
+      
+     
+  
+  </header>
+    
+    <div class="block">
+ <section>
+    
+   <br>
+   <br>
+   <br>
+   <div class="form1">
+   <h2>Hotel Booking</h2>
+   <br>
+   <form id="form">
+       <fieldset>
+        <div class = "CheckIn">
+            <h3>Select checkin date</h3>
+        
+            <label for="dateIn">CheckIn:</label>
+            <br>
+            <br>
+            <input type="date" id="dateIn">
+        </div>
+        <br>
+        <div class = "CheckOut">
+            <h3>Select checkout date</h3>
+            <label for="dateout">CheckOut:</label>
+            <br>
+            <br>
+            <input type="date" id="dateout">
+        </div> 
+        <br>
+        <h3>Select Number of Adults and children</h3>
+        <br>
+        <div class="Ad">
+            <label for="adults">Adult:</label>
+            <br>
+            <div class="button1">
+                <button id ="deduct1" type = "button">-</button>
+                <input type="number" id="num1" name="number" value="0" size="2" min="0" step="1" readonly>
+                <button id ="add1" type = "button">+</button>
+            </div>
+        </div>  
+        <br>
+        <div class="Ch">
+            <label for="child">Children:</label>
+            <br>
+            <div class="button1">
+                <button id ="deduct2" type = "button">-</button>
+                <input type="number" id="num2" name="number" value="0" size="2" min="0" step="1" readonly>
+                <button id ="add2" type = "button">+</button>
+            </div>
+            <br>
+        </div>
+
+        <div class="rooms">
+            <h3>Select Number of rooms</h3>
+            <div class="Single">
+                <label for="Single room">Single:</label>
+                <br>
+                <div class="button1">
+                    <button id ="deduct3" type = "button">-</button>
+                    <input type="number" id="num3" name="number" value="0" size="2" min="0" step="1" readonly>
+                    <button id ="add3" type = "button">+</button>
+                </div>
+            </div>
+            <br>
+            <div class="Double">
+                <label for="double room">Double :</label>
+                <br>
+                <div class="button1">
+                    <button id ="deduct4" type = "button">-</button>
+                    <input type="number" id="num4" name="number" value="0" size="2" min="0" step="1" readonly>
+                    <button id ="add4" type = "button">+</button>
+                    <br>
+                </div>
+            </div>
+            <div class="Triple">
+                <label for="Triple room">Triple:</label>
+                <br>
+                <div class="button1">
+                    <button id ="deduct5" type = "button">-</button>
+                    <input type="number" id="num5" name="number" value="0" size="2" min="0" step="1" readonly>
+                    <button id ="add5" type = "button">+</button>
+                </div>
+            </div>
+            <div class="bed">
+                <label for="bed">Extra bed:</label>
+                <br>
+                <div class="button1">
+                    <button id ="deduct6" type = "button">-</button>
+                    <input type="number" id="num6" name="number" value="0" size="2" min="0" step="1" readonly>
+                    <button id ="add6" type = "button">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="other">
+            <h3>Select Other requirements</h3>
+   
+            <div id="checkboxContainer">
+               <input type="checkbox" id="req1" name="requirements" value="req1">
+               <label for="req1">Wifi</label>
+
+            </div>
+        </div> 
+        <br>
+        <div class="view">
+            <h3>Select view</h3>
+ 
+                <select  id="view"  name="view"required>
+                    <option value = "" selected disabled>Choose view here</option>
+                    <option value="view1">Pool view</option>
+                    <option value="view2">Garden view</option>
+                </select> 
+        </div>
+        <br> 
+        <button type="button"  id="Fav1">Add to favourites</button></a>
+        <br>
+        <input type="text" id="loyal" name="phone" required readonly>
+        <button type="button"  id="Loyalty" >Check Loyalty</button></a>
+        <h3>More details to make booking</h3>  
+        <br>  
+        <label for="name">Full Name:</label>
+        <br>
+        <br>
+                  
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <br>
+        <label for="item">Contact:</label>
+        <br>
+        <br>
+       
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+            <br><br>
+        
+            <label for="email">Email:</label>
+            <br>
+            <br>
+            <input type="email" id="email" name="email" required>
+            
+            <br>
+            <br><br>
+           <label for="promo">Enter Promo:</label>
+            <br>
+            <br>
+           
+            <input type="text" id="promo" name="promo" required>
+            <br>
+            <br><br>
+
+      
+        <button type="button"  id="continue"  >Book Hotel</button></a>
+        <div class="HotelCon"></div>
+        <!--Confirmation message-->
+      </div>
+
+    </section>
+    
+
+
+</form>
+<section>
+   <br>
+   <br>
+   <br>
+<div class="SumTable">
+   <table id="sumTable">
+       <tr><th  colspan="2">summary</th></tr>
+       <tr>
+           <td>CheckIn Date</td>
+           <td id="displayInDate"></td>
+       </tr>
+       <tr>
+           <td>Checkout Date</td>
+           <td id="displayOutDate"> </td>
+       </tr>
+       <tr>
+           <td>No of days</td>
+           <td id="NumDays"></td>
+       </tr>
+       <tr>
+           <td>No of Adults</td>
+           <td id="NumAdult"></td>
+       </tr>
+       <tr>
+           <td>No of Children</td>
+           <td id="NumChild"></td>
+       </tr>
+       <tr>
+           <td>Number of Single Rooms</td>
+           <td>
+                   <div id="type1"></div>
+                   
+                   
+           </td>
+       </tr>
+       <tr>
+              <td>Number of Double Rooms</td>
+              <td>
+                <div id="type2"></div>
+              </td>
+       </tr>
+         <tr>
+              <td>Number of Triple Rooms</td>
+              <td>
+                <div id="type3"></div>
+              </td>
+       <tr>
+        <tr>
+                <td>Number of Extra Beds</td>
+                <td>
+                    <div id="type4"></div>
+                </td>
+        </tr>
+           <td>Cost of current booking</td>
+      
+               <td id="Cost"> </td>
+       </tr>
+       <tr>
+           <td>Discount </td>
+           <td id="Discount"></td>
+       </tr>
+       
+       <tr>
+           <td>Total Payable</td>
+           <td id="payment"></td>
+       </tr>
+       <tr>
+        <td>Overall Cost</td>
+        <td id="overcost"></td>
+     </tr>
+     <tr>
+        <td>Overall Discount</td>
+        <td id="overdiscount"></td>
+     </tr>
+     <tr>
+        <td>Overall Total</td>
+        <td id="overpay"></td>
+     </tr>
+      </div>
+   </table>
+   </section>
+
+   <section>
+      <br>
+   <br>
+   <br>
+   <div class="form1">
+   <h2>Adventure Booking</h2>
+   <br>
+   
+   <form id="form">
+      <fieldset>
+        <div class = "Date">
+      <h3>Select date</h3>
+      <br>
+  <label for="Date">Date:</label>
+  <br><br>
+  <input type="date" id="date">
+</div>
+<br>
+<h3>Select the number of people</h3>
+      <br> 
+      <div class="SlAd">
+        <label for="SAdult">Sri Lankan Adult  : </label>
+        <br>
+        <div class="button1">
+            <button id ="deduct10" type = "button">-</button>
+            <input type="number" id="num10" name="number" value="0" size="2" min="0" step="1" readonly on>
+        <button id ="add10" type = "button">+</button>
+     </div>
+    </div>
+<br>
+<div class="SlCh">
+    <label for="child" min="0">Sri Lankan Child:</label>
+    <br>
+<div class="button1">
+<button id ="deduct7" type = "button">-</button>
+<input type="number" id="num7" name="number" value="0" size="2" min="0" step="1" readonly>
+<button id ="add7" type = "button">+</button>
+</div>
+</div>
+<br>
+<div class="FoAd">
+    <label for="FAdult">Foriegner Adult  : </label>
+    <br>
+    <div class="button8">
+        <button id ="deduct8" type = "button">-</button>
+        <input type="number" id="num8" name="number" value="0" size="2" min="0" step="1" readonly on>
+    <button id ="add8" type = "button">+</button>
+ </div>
+</div>
+
+            <br>
+            <div class="FoCh">
+                <label for ="FChildTickets">Foriegner Child  : </label>
+                <br>
+                <div class="button1">
+                    <button id ="deduct9" type = "button">-</button>
+                    <input type="number" id="num9" name="number" value="0" size="2" min="0" step="1" readonly >
+                    <button id ="add9" type = "button">+</button>   
+            </div>
+            <div class="GuideAd">
+               <label for ="Gadult">No of Guides(Adults) : </label>
+               <br>
+               <div class="button1">
+                   <button id ="deduct11" type = "button">-</button>
+                   <input type="number" id="num11" name="number" value="0" size="2" min="0" step="1" readonly >
+                   <button id ="add11" type = "button">+</button>   
+           </div>
+           <div class="GuideCh">
+            <label for ="Gchild">No of Guides(Kids) : </label>
+            <br>
+            <div class="button1">
+                <button id ="deduct12" type = "button">-</button>
+                <input type="number" id="num12" name="number" value="0" size="2" min="0" step="1" readonly >
+                <button id ="add12" type = "button">+</button>   
+        </div>
+        <button type="button"  id="Fav2" disabled >Add to favourites</button></a>
+        <h3>More details to make booking</h3>    
+                     <label for="name">Full Name:</label>
+                     <br>
+                  <br>
+                  
+                   <input type="text" id="name" name="name" required>
+<br><br>
+                   <label for="item">Contact:</label>
+        <br><br>
+        
+            <input type="tel" id="phone" name="phone" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <br><br>
+
+            
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+
+            
+           
+        </div> 
+        <button type="button"  id="Advent"  >Book Adventure</button></a>
+<div class="AdvenCon"></div>
+</div>
+</section>
+<section>
+       <!--Confirmation message-->
+        <div class="SumTable">
+         <br>
+   <br>
+   <br>
+         <table border="1" id="sumTable">
+             <tr><th  colspan="2">summary</th>
+             <tr>
+                 <td>Date</td>
+                 <td id="displayDate"></div> </td>
+             </tr>
+             <tr>
+                 <td>SL Adults</td>
+                 <td id="SumSlAd"></td>
+             </tr>
+             <tr>
+                 <td>SL Children</td>
+                 <td id="SUmSlCh"></td>
+             </tr>
+             <tr>
+                 <td>Foreigner Adults</td>
+                 <td id="SumFAd"></td>
+             </tr>
+             <tr>
+                 <td>Foreigner Children</td>
+                 <td id="SumFCh"></td>
+             </tr>
+             <tr>
+                 <td>Adult Guide</td>
+                 <td id="SumGadult"></td>
+             </tr>
+             <tr>
+                 <td>Kids Guide</td>
+                 <td id="SumGchild"></td>
+             </tr>
+             <tr class="totalpay">
+                 <td>Total Payable</td>
+                 <td id="total"></td>
+             </tr>
+             
+         </table>
+      </section>
+   <!--loyalty points-->
+</div>
+ <script src="main.js"></script>
+ <!-- end -->
+</body>
+<footer>
+    <div class="footer">
+   
+        <p>Copyright 2023<span class="footerp"><strong>Whispering Woods</strong></span>All rights reserved</p>
+      
+    </div>
+   </footer>
+</html>
